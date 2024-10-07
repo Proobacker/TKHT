@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Tech Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to Tech Store</h2>
+        <p>Find the latest technology products with great deals!</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Product List -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTI3gLA5cj69R360o1Lil1R8ow9jVNlLK5uyVK5LqQ5SjpPSRhimL0OZjjgweM8V0D2fTamwHyOM4NhcIpYEBu1aAv0xPx3nfdH31xqIIfXSfgyhygKRYQt0F_-rA6DXtCnMWA_kNXa4SwR&usqp=CAc" alt="Product 1">
+                <h3>Máy rửa bát</h3>
+                <p>7.000.000đ</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR-Z4SPLAeXObMiuhvnleoX79VpNmC-vXXNXTZ245nfFkNS1HauIIff-sySMBRIRJ7CQfjhjptmLKOgsC1ljA97b1xjQ2QbUE9F1jXdz8a-5hIWWgPs2qoPbpQeVZ0JEu6lrHvvBhT9TA&usqp=CAc" alt="Product 2">
+                <h3>Máy lau nhà</h3>
+                <p>6.000.000đ</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRj7vH8HtTjXD3VUSGBvWqiKj2VVyfYJQhU3UViKGXndiCxbHXVpVygwXlKhOVnIatAXDI8txDTwVHEriWaCMQDHETrQwRJ-K9Wc1glwrpCQFidXnSi982tPhR0WgemnNCOS84zRwPqevM&usqp=CAc" alt="Product 3">
+                <h3>Nồi cơm điện</h3>
+                <p>1.000.000đ</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <h3>Máy rửa bát</h3>
+                <p>Quantity: 1</p>
+                <p>Total: 7.000.000đ</p>
+                <button>Remove</button>
+            </div>
+            <!-- Add more cart items dynamically -->
+        </div>
+        <a href="#checkout" class="btn">Proceed to Checkout</a>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout" id="checkout">
+        <h2>Checkout</h2>
+        <form action="">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tech Store. All rights reserved.Made by Nguyễn Minh Quân Lớp 23IT4.</p>
+    </footer>
+
+</body>
+</html>
